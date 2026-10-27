@@ -46,3 +46,18 @@
 .turtleCaption{font-weight:800;font-size:13px;margin-bottom:9px}
 
 #taskImage{max-height:76vh;object-fit:contain;object-position:top;cursor:zoom-in} #taskImage.expanded{max-height:none;object-fit:initial} .scrollHelp{font-size:12px;color:#9eb7d9;margin:6px 0}
+
+/* Раскрывающийся список заданий ЕГЭ. Клавиатурная навигация встроена в details/summary. */
+.bossGroup { border: 1px solid #364565; background: #152239; border-radius: 12px; margin: 10px 0; overflow: hidden; }
+.bossGroupTitle { cursor: pointer; padding: 12px 10px; display: flex; gap: 7px; align-items: center; list-style: none; user-select: none; color: #f9ddaa; font-size: 12px; font-weight: 800; }
+.bossGroupTitle::-webkit-details-marker { display: none; }
+.bossGroupTitle:hover { background: #283b57; }
+.bossGroupTitle:focus-visible { outline: 2px solid var(--cyan); outline-offset: -3px; }
+.bossGroupHeading { flex: 1; min-width: 0; }
+.bossGroupProgress { white-space: nowrap; font-size: 11px; color: #aec6d6; font-weight: 700; }
+.bossGroupArrow { color: #d4c2ff; font-size: 19px; font-weight: bold; transition: transform .15s ease; }
+.bossGroup[open] .bossGroupArrow { transform: rotate(180deg); }
+.bossGroupItems { padding: 4px 7px 10px; border-top: 1px solid #364565; }
+.bossGroupItems .level { margin: 1px 0; padding: 9px 8px; }
+.lesson strong { color: #f5f8ff; }
+.lesson sub, .lesson sup { font-size: 80%; }
