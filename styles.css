@@ -1,0 +1,48 @@
+:root{--bg:#0a1020;--panel:#151e33;--panel2:#1b2740;--stroke:#2c3a55;--txt:#edf3ff;--muted:#a1b0ca;--accent:#8b77ff;--cyan:#51dbdf;--gold:#ffc86c;--green:#65e3a5;--red:#ff8f9d}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% -15%,#34316a 0,transparent 38%),var(--bg);color:var(--txt);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}button,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.shell{max-width:1480px;margin:auto;padding:25px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}.brand{display:flex;gap:13px;align-items:center}.logo{font-size:25px;background:linear-gradient(140deg,#8d79ff,#47cdd2);border-radius:15px;padding:10px 13px;font-weight:900;color:#081124}.brand b{font-size:23px;letter-spacing:1px}.brand small{display:block;color:var(--muted);font-size:12px;letter-spacing:2px}.meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.pill{background:#1c2942;border:1px solid var(--stroke);border-radius:30px;padding:8px 13px}.reset{color:#f5bac5;background:transparent;border:1px solid #674151;border-radius:12px;padding:10px 14px}.layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:19px}.side,.maincard{background:rgba(20,29,49,.94);border:1px solid var(--stroke);border-radius:20px;box-shadow:0 18px 50px #04091755}.side{padding:18px;align-self:start}.overline{font-size:11px;color:var(--cyan);letter-spacing:2px;font-weight:800}.progressbar{background:#2d3852;height:10px;overflow:hidden;border-radius:20px;margin:10px 0}.fill{background:linear-gradient(90deg,#8173ff,#47d8ca);height:100%;width:0;transition:width .3s}.side h3{margin:22px 0 8px;color:#d0daf0;font-size:13px;text-transform:uppercase;letter-spacing:1px}.level{border:1px solid transparent;width:100%;display:flex;align-items:center;gap:12px;color:#ced9f0;background:transparent;text-align:left;padding:12px 10px;border-radius:12px;margin:3px 0}.level:hover:not(:disabled){background:#25324d}.level.current{background:#292d55;border-color:#6d62c2;color:#fff}.level.completed .num{background:#1b6259;color:#8ffbd5}.level.boss .num{background:#654631;color:#ffe0a5}.num{flex:none;display:grid;place-items:center;width:30px;height:30px;background:#2a3855;border-radius:10px;font-weight:800}.levelName{font-size:13px;font-weight:650}.levelSub{font-size:11px;color:var(--muted)}.maincard{padding:28px;min-height:750px}.hero{display:flex;align-items:center;gap:14px;margin-bottom:9px}.heroIcon{font-size:35px;width:70px;height:70px;background:#2b305c;border-radius:18px;display:grid;place-items:center}.hero h1{font-size:clamp(23px,3vw,34px);margin:0;line-height:1.2}.hero p{color:var(--muted);margin:6px 0 0}.tag{display:inline-block;color:#c6bbff;background:#29264d;padding:4px 10px;border-radius:20px;font-weight:700;font-size:12px;margin-bottom:7px}.lesson{color:#dbe5f7;font-size:15px;max-width:850px}.lesson p{margin:13px 0}.lesson code,.challenge code{background:#25304d;border-radius:5px;padding:2px 6px;color:#8af0dd}.two{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:22px 0}.info{padding:17px;background:#1c2941;border:1px solid #34415b;border-radius:15px}.info strong{color:#fff}.info p{margin:7px 0 0;color:#c5d2e7}.challenge{border-left:3px solid var(--gold);background:#332d31;padding:14px 16px;margin:19px 0;border-radius:0 12px 12px 0}.challenge b{color:#ffda93}.challenge p{margin:6px 0;white-space:pre-wrap}.editorHead{display:flex;align-items:center;justify-content:space-between;margin-top:22px;margin-bottom:0;padding:12px 15px;background:#242d43;border:1px solid #3b4966;border-radius:12px 12px 0 0}.editorHead button{background:transparent;border:0;color:#b5c5e2}.editor{width:100%;min-height:245px;resize:vertical;border-radius:0 0 12px 12px;border:1px solid #3b4966;border-top:0;outline:none;background:#0c1525;color:#c8f5d5;padding:19px;font:14px/1.65 Consolas,'Courier New',monospace;tab-size:4}.editor:focus{border-color:#8a7bff}.buttons{display:flex;align-items:center;gap:12px;margin:15px 0;flex-wrap:wrap}.primary,.secondary{border:0;border-radius:11px;padding:12px 19px;font-weight:800}.primary{background:linear-gradient(120deg,#9380ff,#6b65e9);color:white}.secondary{background:#253451;color:#e2eaff}.status{color:var(--muted);font-size:13px}.console{background:#09101e;border:1px solid #33415d;border-radius:12px;min-height:92px;padding:15px 18px;white-space:pre-wrap;overflow:auto;font:13px/1.6 Consolas,monospace;color:#a9dabb}.console.error{color:#ff9cac}.console.success{color:#89f2b5}.nav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}.foot{color:#7f91ad;margin:20px auto;text-align:center;font-size:12px}.note{font-size:13px;color:#aebcce}.result{display:none;padding:15px;border:1px solid #357e65;background:#16453b;border-radius:12px;margin-top:13px;color:#a7fbd8}.result.show{display:block} .trophy{font-size:20px;color:var(--gold)}@media(max-width:900px){.layout{grid-template-columns:1fr}.side{order:2}.maincard{order:1;padding:19px}.two{grid-template-columns:1fr}.shell{padding:12px}}@media(max-width:500px){.meta{width:100%}.pill{font-size:13px}.heroIcon{width:52px;height:52px;font-size:25px}.maincard{min-height:auto}}
+
+/* 2027 edition: focus on the assignment, voluntary disclosures */
+.helpArea details[hidden]{display:none}
+.assurance{font-size:13px;color:#9eb5d5;border:1px solid #2b3d59;background:#13213a;border-radius:12px;padding:10px 14px;margin:15px 0}
+.helpArea{margin:18px 0;display:flex;flex-direction:column;gap:9px}
+.helpArea details{border:1px solid #34445e;background:#192740;border-radius:12px;padding:0 14px}
+.helpArea summary{cursor:pointer;list-style:none;padding:12px 0;font-weight:720;color:#a9f0e6;user-select:none}
+.helpArea summary:before{content:'▸';display:inline-block;margin-right:10px;transition:transform .2s}
+.helpArea details[open] summary:before{transform:rotate(90deg)}
+.helpArea details[open] summary{border-bottom:1px solid #2c3a55}
+.helpArea .lesson,.helpArea .note{padding:0 3px 8px;white-space:pre-wrap}
+.challenge{margin-top:20px}.challenge p{line-height:1.75}.editor{min-height:280px}
+.levelName{font-size:12.5px}.levelSub{font-size:11px}.side{max-height:calc(100vh - 32px);overflow:auto;position:sticky;top:16px}
+@media(max-width:900px){.side{max-height:unset;position:static;overflow:visible}}
+
+
+
+/* Extended beginner-first curriculum. The code examples stay inside a collapsed theory panel. */
+.lesson{line-height:1.78;white-space:normal!important}
+.lesson h3{color:#b8afff;font-size:16px;line-height:1.4;margin:25px 0 8px}
+.lesson h3:first-child{margin-top:16px}
+.lesson p{margin:10px 0 15px}
+.lesson pre{white-space:pre;overflow-x:auto;background:#0b1729;border:1px solid #344966;border-radius:12px;padding:16px 18px;margin:10px 0 17px;font:14px/1.65 Consolas,"Courier New",monospace}
+.lesson pre code{padding:0;background:transparent;color:#a2edd2;border-radius:0}
+.lesson .checkpoint{background:#233350;border-left:3px solid #8b77ff;border-radius:0 10px 10px 0;padding:12px 15px}
+.helpArea details{scroll-margin-top:16px}
+.helpArea summary:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.levelSub{font-size:10px}
+
+/* Save/restore progress and keyboard undo/redo */
+.meta>.secondary{font-size:12px;padding:9px 11px;border:1px solid #4a5c7e}
+.editorActions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.editorActions button{font-size:12px;border:1px solid #475779;border-radius:8px;padding:5px 8px;background:#20314b}
+.editorActions button:hover:not(:disabled){background:#314866}
+.editorActions button:disabled{opacity:.35}
+.taskImage{display:block;width:100%;height:auto;border-radius:10px;margin:16px 0 7px;background:white;box-shadow:0 6px 23px #090d17bb}
+.taskImage[hidden]{display:none}
+.challenge:has(.taskImage:not([hidden])){background:#1b2638;border-left-color:#ffc86c}
+@media(max-width:620px){.editorHead{align-items:flex-start;gap:12px;flex-direction:column}.editorActions{gap:7px}.editorActions button{font-size:11px}.meta .secondary{flex:1}}
+
+.bossSectionTitle{font-weight:800!important;color:#f6d69e!important;border-top:1px solid #34415b;padding-top:15px;margin-top:22px!important}
+.turtleFrame{margin:17px 0 0;border:1px solid #455d77;background:#f8fbff;border-radius:13px;padding:12px;color:#172c43}
+.turtleFrame[hidden]{display:none}
+.turtleFrame canvas{max-width:100%;width:100%;height:auto;background:white;border-radius:8px}
+.turtleCaption{font-weight:800;font-size:13px;margin-bottom:9px}
+
+#taskImage{max-height:76vh;object-fit:contain;object-position:top;cursor:zoom-in} #taskImage.expanded{max-height:none;object-fit:initial} .scrollHelp{font-size:12px;color:#9eb7d9;margin:6px 0}
